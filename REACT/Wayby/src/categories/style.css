@@ -21,7 +21,7 @@
   max-width: 1200px;
   border: none;
   margin: 0 auto;
-  /* justify-content: center; */
+  justify-content: center;
 }
 
 .product-card {
@@ -220,7 +220,12 @@
   .product-card {
     width: 46%;
   }
-  
+}
+
+@media (min-width: 1025px) {
+.product-list .product-card:nth-last-child(1) {
+  margin-right: auto;
+}
 }
 
 @media (max-width: 768px) {
@@ -230,7 +235,9 @@
   }
 
   .product-card {
-    width: 320px;
+    max-width: 350px;
+    min-width: 200px;
+    /* width: 350px; */
   }
 
   .product-footer {

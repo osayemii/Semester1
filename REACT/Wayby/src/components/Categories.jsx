@@ -1,5 +1,6 @@
 import React from 'react';
 import './Categories.css';
+import { HashLink } from 'react-router-hash-link';
 
 const scrollToContact = () => {
   const contactSection = document.getElementById('contact');
@@ -14,37 +15,42 @@ const categories = [
     name: "Living Room",
     image: "https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop",
     description: "Comfortable seating and elegant tables for your living space",
-    linkCat: {}
+    linkCat: "/categories/Cupboard#searchAndSort"
   },
   {
     id: 2,
     name: "Dining Room",
     image: "https://images.pexels.com/photos/1350789/pexels-photo-1350789.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop",
-    description: "Beautiful dining sets for memorable family meals"
+    description: "Beautiful dining sets for memorable family meals",
+    linkCat: "/categories/KitchenAndDinning#searchAndSort"
   },
   {
     id: 3,
     name: "Bedroom",
     image: "https://images.pexels.com/photos/1571468/pexels-photo-1571468.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop",
-    description: "Luxurious beds and storage solutions for restful nights"
+    description: "Luxurious beds and storage solutions for restful nights",
+    linkCat: "/categories/BedRoom#searchAndSort"
   },
   {
     id: 4,
-    name: "Home Office",
+    name: "Office",
     image: "https://images.pexels.com/photos/1571453/pexels-photo-1571453.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop",
-    description: "Productive workspaces with classic style and functionality"
+    description: "Productive workspaces with classic style and functionality",
+    linkCat: "/categories/Office#searchAndSort"
   },
   {
     id: 5,
-    name: "Storage",
+    name: "Door",
     image: "https://images.pexels.com/photos/1571457/pexels-photo-1571457.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop",
-    description: "Elegant storage solutions to organize your home beautifully"
+    description: "Elegant storage solutions to organize your home beautifully",
+    linkCat: "/categories/Door#searchAndSort"
   },
   {
     id: 6,
-    name: "Outdoor",
+    name: "TV Stand",
     image: "https://images.pexels.com/photos/1571458/pexels-photo-1571458.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop",
-    description: "Weather-resistant furniture for your outdoor living spaces"
+    description: "Weather-resistant furniture for your outdoor living spaces",
+    linkCat: "/categories/TVStand#searchAndSort"
   }
 ];
 
@@ -66,7 +72,7 @@ const Categories = () => {
                   <div className="category-content">
                     <h3>{category.name}</h3>
                     <p>{category.description}</p>
-                    <button className="btn btn-primary" onClick={scrollToContact}>Shop Now</button>
+                    <HashLink to={category.linkCat}><button className="btn btn-primary">Shop Now</button></HashLink>
                   </div>
                 </div>
               </div>

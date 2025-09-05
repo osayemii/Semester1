@@ -1,5 +1,4 @@
-import React, { useState, useMemo } from 'react';
-import { HashLink } from 'react-router-hash-link'
+import { useState, useMemo } from 'react';
 import './style.css'
 import sadImage from '../assets/sad.jpeg';
 import img1 from '../assets/Bedroom/1.jpg'
