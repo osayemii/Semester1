@@ -8,15 +8,15 @@
 
 ## Root folders
 
-| Folder | What it contains |
-| --- | --- |
-| `C program/` | C programming coursework. |
-| `HTMLandCSS/` | HTML/CSS coursework. |
-| `JAVA/` | Java coursework. |
-| `OOP_C#/` | Object-oriented C# coursework. |
-| `REACT/` | React coursework. |
-| `SQL/` | SQL coursework. |
-| `javaScript/` | JavaScript coursework. |
+| Folder | Stack | What it contains |
+| --- | --- | --- |
+| `C program/` | C | C programming coursework. |
+| `HTMLandCSS/` | HTML, CSS | HTML/CSS coursework. |
+| `JAVA/` | Java | Java coursework. |
+| `OOP_C#/` | C#, .NET OOP | Object-oriented C# coursework. |
+| `REACT/` | React, JavaScript | React coursework. |
+| `SQL/` | SQL | SQL coursework. |
+| `javaScript/` | JavaScript | JavaScript coursework. |
 
 Only root folders are listed. Generated caches, package folders, editor settings, and other non-personal folders are omitted.
 
